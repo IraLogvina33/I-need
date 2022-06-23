@@ -1,0 +1,427 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper1,
+.wrapper2 {
+    max-width: 1176px;
+    margin: 0 auto;
+}
+
+.nav_header {
+    background-color: rgba(32, 83, 80, 0.5);
+    text-align: center;
+}
+
+.nav_header a {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.065em;
+    display: inline-block;
+    margin: 30px 0;
+}
+
+.nav_header a:not(:last-child)::after {
+    display: inline-block;
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #FFF;
+    margin-left: 45px;
+    vertical-align: middle;
+}
+
+.nav_header a:not(:last-child) {
+    margin-right: 45px;
+}
+
+.main {
+    background-image: url(../img/fon.png);
+    background-position: center center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+}
+
+.fon {
+    text-align: center;
+    padding-bottom: 450px;
+    height: 866px;
+}
+
+h1 {
+    font-size: 3.75rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 450px;
+}
+
+.fon p {
+    font-size: 1.5625rem;
+    color: #fff;
+    letter-spacing: 0.02em;
+    line-height: 1.302em;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.buttom {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 312px;
+    background-color: #AE5F3D;
+    border-radius: 30px;
+    margin: 0 auto;
+    padding: 21px 84px 18px;
+    transition: all 1s;
+    margin-bottom: 85px;
+}
+
+.fon .buttom:hover {
+    background-color: rgba(71, 28, 28, .9);
+}
+
+.fon .vector::before {
+    content: "";
+    background-image: url(../Vector\ 1\ \(2\).png);
+    width: 59px;
+    height: 22px;
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+}
+
+.about_us {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    max-width: 617px;
+    margin: 0 auto;
+}
+
+.about_us h2 {
+    margin-top: 30px;
+}
+
+.about_us p {
+    font-size: 1.5625rem;
+    font-weight: 300;
+    color: #000;
+    margin-top: 37px
+}
+
+.about_us img {
+    width: 100%;
+    max-width: 617px;
+}
+
+.entertainment {
+    background-color: #F5F5F5;
+    padding: 100px 0;
+    font-size: 0;
+    /* Для обнуления отступов между inline-block колонками */
+    text-align: center;
+}
+
+.entertainment p {
+    font-size: 1.5625rem;
+    font-weight: 300;
+    line-height: 1.237em;
+    text-align: center;
+    margin: 30px auto 37px;
+}
+
+.types_of_entertainment {
+    display: inline-block;
+    background-color: #FFF;
+    border-radius: 30px;
+    padding: 30px 0;
+    width: calc((100% - 24px*2)/3);
+    max-width: 376px;
+    text-align: center;
+    min-width: 303px;
+}
+
+.types_of_entertainment:not(:last-child) {
+    margin-right: 24px;
+}
+
+.types_of_entertainment h4 {
+    font-size: 1.5625rem;
+    text-align: center;
+    margin: 25px auto 20px;
+    font-weight: 400;
+}
+
+.types_of_entertainment p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.357em;
+    margin: 0;
+}
+
+.types_of_entertainment i {
+    display: inline-block;
+    width: 100%;
+    max-width: 150px;
+}
+
+.fa-solid {
+    font-size: 150px;
+    position: relative;
+    color: #AE5F3D;
+}
+
+.apartments {
+    padding: 100px 0;
+    font-size: 0;
+    /* Для обнуления отступов между inline-block колонками */
+    text-align: center;
+}
+
+.apartments h2 {
+    margin-bottom: 30px;
+}
+
+.apartments p {
+    font-size: 1.5625rem;
+    font-weight: 300;
+    line-height: 1.237em;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.types_of_apartments {
+    display: inline-block;
+    width: calc((100% - 48px*2) / 3);
+    vertical-align: top;
+    position: relative;
+}
+
+.types_of_apartments:not(:last-child) {
+    margin-right: 48px;
+}
+
+.types_of_apartments h3 {
+    font-size: 1.875rem;
+    text-align: left;
+    margin: 25px 0 15px;
+    font-weight: 400;
+}
+
+.types_of_apartments img {
+    width: 100%;
+}
+
+.types_of_apartments span {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    background-color: #FFF;
+    opacity: .8;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 6px 11px 5px 10px;
+}
+
+.types_of_apartments p {
+    font-size: 1.125rem;
+    font-weight: 300;
+    color: #474747;
+    text-align: left;
+    line-height: normal;
+    margin: 0;
+}
+
+.vip::before {
+    content: "VIP";
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-color: #F24040;
+    border-radius: 50%;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 0.875rem;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    line-height: 50px;
+    text-align: center;
+    font-family: Source Serif Pro;
+}
+
+.book_apart {
+    text-align: center;
+    background-color: #F5F5F5;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+form {
+    background-color: #FFF;
+    margin: 0 auto;
+    padding: 100px 120px;
+    display: inline-block;
+    border-radius: 30px;
+    max-width: 1016px;
+    width: 100%;
+    text-align: left;
+}
+
+form h2 {
+    margin-bottom: 30px;
+}
+
+form p {
+    font-size: 1.5625rem;
+    font-weight: 300;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.aparts {
+    font-size: 1.375rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label[for="UserEmail"],
+label[for="UserName"] {
+    font-size: 1.375rem;
+    font-weight: 300;
+    text-align: left;
+    color: #454545;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="text"] {
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: left;
+    color: #9D9D9D;
+    display: block;
+    margin-bottom: 25px;
+    padding: 19px 35px;
+    width: 100%;
+    border: 1px solid #AE5F3D;
+}
+
+input[type="email"],
+input[type="text"]:focus {
+    outline-color: #454545;
+}
+
+label[for="hotel"],
+label[for="cottage"],
+label[for="townhouse"] {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #474747;
+    text-align: left;
+}
+
+input[type="radio"] {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 16px;
+}
+
+input[type="submit"] {
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-align: center;
+    color: #FFF;
+    background-color: #AE5F3D;
+    border-radius: 30px;
+    margin: 40px auto 0;
+    padding: 19px 63px;
+    border: none;
+    display: block;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(71, 28, 28, .9);
+}
+
+footer {
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 1.875rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 70px auto 35px;
+}
+
+hr {
+    width: 150px;
+    border-top: 0.7px solid #737373;
+    margin: 0 auto;
+}
+
+footer nav a {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    letter-spacing: 0.065em;
+    color: #000;
+    text-decoration: none;
+    display: block;
+    margin: 25px 0;
+}
+
+footer nav a:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.fa-brands {
+    font-size: 24px;
+    color: #000;
+    margin-top: 35px;
+    margin-bottom: 70px;
+    transition: all .5s;
+}
+
+.fa-brands:hover {
+    transform: scale(1.2);
+}
+
+.fa-brands:not(:last-child) {
+    margin-right: 30px;
+}
