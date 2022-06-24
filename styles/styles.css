@@ -18,12 +18,12 @@ body {
     margin: 0 auto;
 }
 
-.nav_header {
+.nav-header {
     background-color: rgba(32, 83, 80, 0.5);
     text-align: center;
 }
 
-.nav_header a {
+.nav-header a {
     font-size: 1.25rem;
     font-weight: 700;
     color: #fff;
@@ -33,7 +33,7 @@ body {
     margin: 30px 0;
 }
 
-.nav_header a:not(:last-child)::after {
+.nav-header a:not(:last-child)::after {
     display: inline-block;
     content: "";
     width: 30px;
@@ -43,7 +43,7 @@ body {
     vertical-align: middle;
 }
 
-.nav_header a:not(:last-child) {
+.nav-header a:not(:last-child) {
     margin-right: 45px;
 }
 
@@ -60,7 +60,8 @@ body {
 .fon {
     text-align: center;
     padding-bottom: 450px;
-    height: 866px;
+    /*height: 866px;*/
+    max-height: 866px;
 }
 
 h1 {
@@ -97,7 +98,7 @@ h1 {
     margin-bottom: 85px;
 }
 
-.fon .buttom:hover {
+.buttom:hover {
     background-color: rgba(71, 28, 28, .9);
 }
 
@@ -120,7 +121,7 @@ h2 {
     text-align: center;
 }
 
-.about_us {
+.about-us {
     text-align: center;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -128,18 +129,18 @@ h2 {
     margin: 0 auto;
 }
 
-.about_us h2 {
+.about-us h2 {
     margin-top: 30px;
 }
 
-.about_us p {
+.about-us p {
     font-size: 1.5625rem;
     font-weight: 300;
     color: #000;
     margin-top: 37px
 }
 
-.about_us img {
+.about-us img {
     width: 100%;
     max-width: 617px;
 }
@@ -160,7 +161,7 @@ h2 {
     margin: 30px auto 37px;
 }
 
-.types_of_entertainment {
+.entertainment-item {
     display: inline-block;
     background-color: #FFF;
     border-radius: 30px;
@@ -171,25 +172,25 @@ h2 {
     min-width: 303px;
 }
 
-.types_of_entertainment:not(:last-child) {
+.entertainment-item:not(:last-child) {
     margin-right: 24px;
 }
 
-.types_of_entertainment h4 {
+.entertainment-item h4 {
     font-size: 1.5625rem;
     text-align: center;
     margin: 25px auto 20px;
     font-weight: 400;
 }
 
-.types_of_entertainment p {
+.entertainment-item p {
     font-size: 1.25rem;
     font-weight: 300;
     line-height: 1.357em;
     margin: 0;
 }
 
-.types_of_entertainment i {
+.entertainment-item i {
     display: inline-block;
     width: 100%;
     max-width: 150px;
@@ -220,29 +221,29 @@ h2 {
     margin-bottom: 55px;
 }
 
-.types_of_apartments {
+.apartments-item {
     display: inline-block;
     width: calc((100% - 48px*2) / 3);
     vertical-align: top;
     position: relative;
 }
 
-.types_of_apartments:not(:last-child) {
+.apartments-item:not(:last-child) {
     margin-right: 48px;
 }
 
-.types_of_apartments h3 {
+.apartments-item h3 {
     font-size: 1.875rem;
     text-align: left;
     margin: 25px 0 15px;
     font-weight: 400;
 }
 
-.types_of_apartments img {
+.apartments-item img {
     width: 100%;
 }
 
-.types_of_apartments span {
+.apartments-item span {
     font-size: 1rem;
     font-weight: 500;
     text-align: center;
@@ -254,7 +255,7 @@ h2 {
     padding: 6px 11px 5px 10px;
 }
 
-.types_of_apartments p {
+.apartments-item p {
     font-size: 1.125rem;
     font-weight: 300;
     color: #474747;
@@ -281,7 +282,7 @@ h2 {
     font-family: Source Serif Pro;
 }
 
-.book_apart {
+.book-apart {
     text-align: center;
     background-color: #F5F5F5;
     padding-top: 100px;
@@ -390,13 +391,13 @@ footer h3 {
     margin: 70px auto 35px;
 }
 
-hr {
+.border-bottom {
+    border-bottom: .7px solid #737373;
     width: 150px;
-    border-top: 0.7px solid #737373;
     margin: 0 auto;
 }
 
-footer nav a {
+.nav-in-footer {
     font-size: 0.9375rem;
     font-weight: 500;
     letter-spacing: 0.065em;
